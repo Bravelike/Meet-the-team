@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1280px;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    margin: 0 auto;
+    font-family: "Sora", serif;
+}
+
+.grid-container {
+    max-width: 1180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(288px, auto);
+    background-color: #F3F4F6;
+    padding-left: 30px;
+    background-image: url(./img/Background_decor.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.main-text {
+    grid-column: 1 / span 2;
+    margin-top: 30px;
+}
+.main-text p {
+    color: #3662E3;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.main-text h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.main-text .big-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #394150;
+    max-width: 500px;
+}
+
+.liam {
+    grid-column: 3;
+    background-color: #C1B6F8;
+    background-image: url(./img/person_1.png);
+    background-size: cover;
+}
+.Sophia {
+    grid-column: 4 ;
+    background-color: #EDACD2;
+    background-image: url(./img/person_2.png);
+    background-size: cover;
+    border-top-right-radius: 20px;
+
+}
+.ethan {
+    grid-column: 2 ;
+    background-color: #9DC4F8;
+    background-image: url(./img/person_3.png);
+    background-size: cover;
+}
+.Isabella {
+    grid-column: 3 ;
+    background-color: #F8D8B0;
+    background-image: url(./img/person_4.png);
+    background-size: cover;
+}
+.Noah {
+    grid-column: 4 ;
+    background-color: #86E7D4;
+    background-image: url(./img/person_5.png);
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+}
+.link {
+    position: relative;
+}
+.link a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #394150;
+}
+
+
+.section {
+    position: relative;
+}
+.section .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Target portrait-oriented tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Styles for tablets in portrait mode */
+    .grid-container {
+        max-width: 1024px;
+        min-width: 600px;
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+    .main-text {
+        grid-column: 1 /-1;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    .liam{
+        grid-column: 1;
+    }
+    .Sophia {
+        grid-column: 2;
+        border-radius: 0;
+    }
+    .ethan {
+        grid-column: 3;
+        grid-row: 2;
+
+    }
+    .link{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .Isabella {
+        grid-column: 2;
+    }
+    .Noah {
+        grid-column: 3;
+        /* grid-row: 2; */
+    }
+}
+
+/* Target landscape-oriented tablets */
+@media (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) {
+    /* Styles for tablets in landscape mode */
+    .grid-container {
+        max-width: 1280px;
+        min-width: 768px;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+    
+    .main-text {
+        grid-column: 1 /-1;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    .liam{
+        grid-column: 1;
+    }
+    .Sophia {
+        grid-column: 2;
+        border-radius: 0;
+    }
+    .ethan {
+        grid-column: 3;
+        grid-row: 2;
+
+    }
+    .link{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .Isabella {
+        grid-column: 2;
+    }
+    .Noah {
+        grid-column: 3;
+        /* grid-row: 2; */
+    }
+}
+@media (max-width: 640px){
+    /* Styles for tablets in landscape mode */
+    .grid-container {
+        max-width: 640px;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+    
+    .main-text {
+        grid-column: 1 /-1;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    .liam{
+        grid-column: 1;
+        grid-row: 2;
+        background-size: cover;
+        background-position: center;
+    }
+    .Sophia {
+        grid-column: 2;
+        grid-row: 2;
+        border-radius: 0;
+        background-size: cover;
+        background-position: center;
+    }
+    .ethan {
+        grid-column: 1;
+        grid-row: 3;
+        background-size: cover;
+        background-position: center;
+    }
+    .link{
+        grid-column: 1;
+        grid-row: 4;
+
+    }
+    .Isabella {
+        grid-column: 2;
+        background-size: cover;
+        background-position: center;
+    }
+    .Noah {
+        grid-column: 2;
+        grid-row: 4;
+        background-size: cover;
+        background-position: center;
+    }
+}
