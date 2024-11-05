@@ -50,34 +50,35 @@ body {
 .liam {
     grid-column: 3;
     background-color: #C1B6F8;
-    background-image: url(./img/person_1.png);
-    background-size: cover;
+    background-image: url(./img/person_1.png),url(./img/Gradient.svg);
+    background-size: cover,cover;
+    
 }
 .Sophia {
     grid-column: 4 ;
     background-color: #EDACD2;
-    background-image: url(./img/person_2.png);
-    background-size: cover;
+    background-image: url(./img/person_2.png),url(./img/Gradient.svg);
+    background-size: cover,cover;
     border-top-right-radius: 20px;
 
 }
 .ethan {
     grid-column: 2 ;
     background-color: #9DC4F8;
-    background-image: url(./img/person_3.png);
-    background-size: cover;
+    background-image: url(./img/person_3.png),url(./img/Gradient.svg);
+    background-size: cover,cover;
 }
 .Isabella {
     grid-column: 3 ;
     background-color: #F8D8B0;
-    background-image: url(./img/person_4.png);
-    background-size: cover;
+    background-image: url(./img/person_4.png),url(./img/Gradient.svg);
+    background-size: cover,cover;
 }
 .Noah {
     grid-column: 4 ;
     background-color: #86E7D4;
-    background-image: url(./img/person_5.png);
-    background-size: cover;
+    background-image: url(./img/person_5.png),url(./img/Gradient.svg);
+    background-size: cover,cover;
     border-bottom-right-radius: 20px;
 }
 .link {
