@@ -107,7 +107,7 @@ body {
 }
 
 /* Target portrait-oriented tablets */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     /* Styles for tablets in portrait mode */
     .grid-container {
         max-width: 1024px;
